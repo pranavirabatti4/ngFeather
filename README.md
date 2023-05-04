@@ -1,1 +1,1 @@
-# ngFeather
+# ngFeather lib
