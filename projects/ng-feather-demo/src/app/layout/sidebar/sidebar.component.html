@@ -1,0 +1,32 @@
+<div id="sidebar-wrapper" class="p-3 text-bg-dark" style="width: 240px">
+  <span class="fs-4 ms-4">ngFeather</span>
+  <button
+    type="button"
+    class="ms-4 btn btn-sm btn-icon text-bg-light"
+    appToggleSidebar
+    *ngIf="innerWidth <= 739"
+  >
+    ☰
+  </button>
+  <hr class="top" />
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item" *ngFor="let item of menuItems">
+      <ng-container *ngIf="item.heading;then nonLink else (item.externalLink ? externalLink : link)">
+      </ng-container>
+      <ng-template #link>
+        <a (click)="onItemSelect($event)" [routerLink]="item.link" [ngClass]="{'active': item.active }" class="nav-link text-white" aria-current="page">
+          {{item.text}}
+        </a>
+      </ng-template>
+      <ng-template #externalLink>
+        <a (click)="onItemSelect($event)" [attr.href]="item.link" [ngClass]="{'active': item.active }" class="nav-link text-white" aria-current="page">
+          {{item.text}}
+        </a>
+      </ng-template>
+      <ng-template #nonLink>
+        <span class="nav-link text-white" [ngClass]="{ 'bold': item.bold }"> {{item.text}}</span>
+      </ng-template>
+    </li>
+  </ul>
+  <hr />
+</div>

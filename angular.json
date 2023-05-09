@@ -58,9 +58,13 @@
               "projects/ng-feather-demo/src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/ng-feather-demo/src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "projects/ng-feather-demo/src/assets/js/buttons.js"
+            ]
           },
           "configurations": {
             "production": {
