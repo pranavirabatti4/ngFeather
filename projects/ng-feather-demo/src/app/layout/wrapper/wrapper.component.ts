@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-wrapper',
@@ -18,7 +18,8 @@ import { Component } from '@angular/core';
 
     </main>
   `,
-  styleUrls: ['./wrapper.component.css']
+  styleUrls: ['./wrapper.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class WrapperComponent {
 
