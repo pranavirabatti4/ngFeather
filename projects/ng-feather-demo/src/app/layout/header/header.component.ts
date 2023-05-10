@@ -24,26 +24,24 @@ import { Component } from "@angular/core";
               <!-- <a class="nav-link" href="#!">Home</a> -->
               <!-- Place this tag where you want the button to render. -->
               <!-- Place this tag where you want the button to render. -->
-              <a
-                class="github-button"
-                href="https://github.com/pranavirabatti4/ngFeather"
-                data-size="large"
-                data-show-count="true"
-                aria-label="Star pranavirabatti4/ngFeather on GitHub"
-                >Star</a
-              >
-            </li>
-            <li class="nav-item mt-1">
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=pranavirabatti4&repo=ngFeather&type=star&count=true&size=large"
+                frameborder="0"
+                scrolling="0"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
+
               <!-- Place this tag where you want the button to render. -->
-              <!-- Place this tag where you want the button to render. -->
-              <a
-                class="github-button"
-                href="https://github.com/pranavirabatti4/ngFeather/fork"
-                data-size="large"
-                data-show-count="true"
-                aria-label="Fork pranavirabatti4/ngFeather on GitHub"
-                >Fork</a
-              >
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=pranavirabatti4&repo=ngFeather&type=fork&count=true&size=large"
+                frameborder="0"
+                scrolling="0"
+                width="170"
+                height="30"
+                title="GitHub"
+              ></iframe>
             </li>
           </ul>
         </div>
